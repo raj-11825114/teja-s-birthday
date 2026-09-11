@@ -1,0 +1,3320 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>For Chasmish ❤️</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        :root {
+
+            --pink: #ff6fae;
+            --light-pink: #ffd6e8;
+            --purple: #9b6cff;
+            --cream: #fff8fb;
+            --dark: #180d19;
+
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            background: var(--cream);
+            color: var(--dark);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            overflow-x: hidden;
+
+        }
+
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* ========================================
+           GENERAL SCREEN
+        ======================================== */
+
+        .screen {
+
+            min-height: 100vh;
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px 20px;
+
+            position: relative;
+
+        }
+
+
+        .story-section {
+
+            min-height: 100vh;
+
+            padding: 100px 25px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            background: #fff;
+
+        }
+
+
+        .story-container {
+
+            width: min(850px, 100%);
+
+            text-align: center;
+
+        }
+
+
+        /* ========================================
+           INTRO
+        ======================================== */
+
+        #intro {
+
+            background:
+
+                radial-gradient(
+                    circle at 20% 20%,
+                    #ffdce9,
+                    transparent 35%
+                ),
+
+                radial-gradient(
+                    circle at 80% 80%,
+                    #e6d8ff,
+                    transparent 35%
+                ),
+
+                #fff8fb;
+
+            text-align: center;
+
+        }
+
+
+        .intro-content {
+
+            max-width: 650px;
+
+            animation:
+                fadeUp 1.2s ease;
+
+        }
+
+
+        .small-label {
+
+            font-family: Arial, sans-serif;
+
+            text-transform: uppercase;
+
+            letter-spacing: 5px;
+
+            font-size: 12px;
+
+            color: #9c7186;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .intro-content h1 {
+
+            font-size:
+                clamp(55px, 12vw, 105px);
+
+            font-weight: normal;
+
+            line-height: .9;
+
+            color: #3b2434;
+
+        }
+
+
+        .intro-content h1 span {
+
+            display: block;
+
+            color: var(--pink);
+
+            font-style: italic;
+
+        }
+
+
+        .intro-text {
+
+            margin: 35px auto;
+
+            font-size: 20px;
+
+            line-height: 1.7;
+
+            color: #735767;
+
+            max-width: 450px;
+
+        }
+
+
+        .main-btn {
+
+            border: none;
+
+            padding: 16px 34px;
+
+            border-radius: 100px;
+
+            background: #3b2434;
+
+            color: white;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: .35s;
+
+            box-shadow:
+                0 12px 30px rgba(59, 36, 52, .2);
+
+        }
+
+
+        .main-btn:hover {
+
+            transform: translateY(-5px);
+
+            background: var(--pink);
+
+            box-shadow:
+                0 15px 35px rgba(255, 111, 174, .35);
+
+        }
+
+
+        /* ========================================
+           FLOATING DECORATION
+        ======================================== */
+
+        .floating {
+
+            position: absolute;
+
+            pointer-events: none;
+
+            opacity: .45;
+
+            animation:
+                floating 5s ease-in-out infinite;
+
+        }
+
+
+        .heart1 {
+
+            top: 15%;
+            left: 8%;
+
+            font-size: 28px;
+
+        }
+
+
+        .heart2 {
+
+            bottom: 18%;
+            right: 8%;
+
+            font-size: 35px;
+
+            animation-delay: 1s;
+
+        }
+
+
+        .star1 {
+
+            top: 20%;
+            right: 15%;
+
+            font-size: 20px;
+
+            animation-delay: 2s;
+
+        }
+
+
+        .star2 {
+
+            bottom: 20%;
+            left: 15%;
+
+            font-size: 18px;
+
+            animation-delay: 3s;
+
+        }
+
+
+        @keyframes floating {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0)
+                    rotate(0);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-18px)
+                    rotate(8deg);
+
+            }
+
+        }
+
+
+        /* ========================================
+           SECTION TEXT
+        ======================================== */
+
+        .section-number {
+
+            font-family: Arial, sans-serif;
+
+            color: var(--pink);
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .story-container h2 {
+
+            font-size:
+                clamp(40px, 8vw, 72px);
+
+            font-weight: normal;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .story-container h2 em {
+
+            color: var(--pink);
+
+        }
+
+
+        .story-container p {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            font-size: 20px;
+
+            line-height: 2;
+
+            color: #725b67;
+
+        }
+
+
+        .continue-btn {
+
+            margin-top: 50px;
+
+            background: transparent;
+
+            border: 1px solid #cdb6c2;
+
+            padding: 13px 28px;
+
+            border-radius: 100px;
+
+            cursor: pointer;
+
+            color: #4b3441;
+
+            transition: .3s;
+
+        }
+
+
+        .continue-btn:hover {
+
+            background: #3b2434;
+
+            color: white;
+
+            border-color: #3b2434;
+
+        }
+
+
+        /* ========================================
+           LETTER
+        ======================================== */
+
+        #letter {
+
+            background:
+
+                linear-gradient(
+                    rgba(255,255,255,.8),
+                    rgba(255,255,255,.8)
+                ),
+
+                repeating-linear-gradient(
+
+                    0deg,
+
+                    transparent,
+                    transparent 31px,
+
+                    #f1dfe7 32px
+
+                );
+
+        }
+
+
+        .letter {
+
+            background:
+                rgba(255, 250, 252, .94);
+
+            padding: 55px;
+
+            max-width: 750px;
+
+            box-shadow:
+                0 25px 80px
+                rgba(82, 43, 65, .1);
+
+            border-radius: 5px;
+
+            text-align: left;
+
+        }
+
+
+        .letter h2 {
+
+            text-align: center;
+
+        }
+
+
+        .letter-content {
+
+            margin-top: 30px;
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: #684d5c;
+
+        }
+
+
+        .special-lines {
+
+            margin: 35px 0;
+
+            padding-left: 25px;
+
+            border-left:
+                3px solid var(--pink);
+
+            font-style: italic;
+
+            color: #432c3b;
+
+        }
+
+
+        /* ========================================
+           GIFT
+        ======================================== */
+
+        #gift {
+
+            background: #fff4f8;
+
+            text-align: center;
+
+        }
+
+
+        .gift {
+
+            font-size: 120px;
+
+            cursor: pointer;
+
+            display: inline-block;
+
+            animation:
+                giftBounce 1.5s infinite
+                ease-in-out;
+
+            transition: .3s;
+
+        }
+
+
+        .gift:hover {
+
+            transform:
+                scale(1.15)
+                rotate(5deg);
+
+        }
+
+
+        @keyframes giftBounce {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-15px);
+
+            }
+
+        }
+
+
+        /* ========================================
+           BIRTHDAY
+        ======================================== */
+
+        #birthday {
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 40%,
+                    #ffd7e8,
+                    transparent 45%
+                ),
+
+                #fff7fb;
+
+            text-align: center;
+
+            overflow: hidden;
+
+        }
+
+
+        .birthday-title {
+
+            font-family: Arial, sans-serif;
+
+            font-size:
+                clamp(45px, 11vw, 110px);
+
+            line-height: .9;
+
+            letter-spacing: -5px;
+
+            color: #33202d;
+
+        }
+
+
+        .birthday-title span {
+
+            display: block;
+
+            color: var(--pink);
+
+            font-family: Georgia, serif;
+
+            font-style: italic;
+
+            letter-spacing: -2px;
+
+        }
+
+
+        .birthday-cake {
+
+            font-size: 90px;
+
+            margin: 30px 0;
+
+            animation:
+                cake 1s infinite alternate;
+
+        }
+
+
+        @keyframes cake {
+
+            from {
+
+                transform:
+                    rotate(-4deg);
+
+            }
+
+            to {
+
+                transform:
+                    rotate(4deg);
+
+            }
+
+        }
+
+
+        /* ========================================
+           MEMORY INTRO
+        ======================================== */
+
+        #memory-intro {
+
+            background: #241622;
+
+            color: white;
+
+        }
+
+
+        #memory-intro .section-number {
+
+            color: #ff8fbd;
+
+        }
+
+
+        #memory-intro h2 {
+
+            color: white;
+
+        }
+
+
+        #memory-intro p {
+
+            color: #d7c4d0;
+
+        }
+
+
+        #memory-intro .continue-btn {
+
+            color: white;
+
+            border-color: #8e7482;
+
+        }
+
+
+        /* ========================================
+           MEMORIES
+        ======================================== */
+
+        #memories {
+
+            display: block;
+
+            padding: 100px 20px;
+
+            background: #fffafc;
+
+        }
+
+
+        .gallery-heading {
+
+            text-align: center;
+
+            margin-bottom: 70px;
+
+        }
+
+
+        .gallery-heading h2 {
+
+            font-size:
+                clamp(45px, 8vw, 75px);
+
+            font-weight: normal;
+
+        }
+
+
+        .gallery-heading h2 em {
+
+            color: var(--pink);
+
+        }
+
+
+        .gallery-heading p {
+
+            color: #806a76;
+
+            margin-top: 15px;
+
+            font-size: 17px;
+
+        }
+
+
+        /* ========================================
+           MASONRY GALLERY
+        ======================================== */
+
+        .photo-gallery {
+
+            width: min(1150px, 100%);
+
+            margin: auto;
+
+            columns: 4 220px;
+
+            column-gap: 18px;
+
+        }
+
+
+        .photo-card,
+        .video-card {
+
+            width: 100%;
+
+            margin-bottom: 18px;
+
+            break-inside: avoid;
+
+            overflow: hidden;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            position: relative;
+
+            background: #eee;
+
+            box-shadow:
+                0 8px 25px
+                rgba(55, 25, 43, .1);
+
+            transition: .4s ease;
+
+        }
+
+
+        .photo-card:hover,
+        .video-card:hover {
+
+            transform:
+                translateY(-7px)
+                scale(1.015);
+
+            box-shadow:
+                0 20px 40px
+                rgba(55, 25, 43, .18);
+
+        }
+
+
+        /* ========================================
+           PHOTO SIZES
+        ======================================== */
+
+        .photo-card.landscape {
+
+            aspect-ratio: 16 / 10;
+
+        }
+
+
+        .photo-card.portrait {
+
+            aspect-ratio: 4 / 5;
+
+        }
+
+
+        .photo-card img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: .6s;
+
+        }
+
+
+        .photo-card:hover img {
+
+            transform:
+                scale(1.06);
+
+        }
+
+
+        /* ========================================
+           VIDEO SIZES
+        ======================================== */
+
+        .video-card.landscape-video {
+
+            aspect-ratio: 16 / 10;
+
+        }
+
+
+        .video-card.portrait-video {
+
+            aspect-ratio: 9 / 16;
+
+        }
+
+
+        .video-card video {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #1d1018;
+
+        }
+
+
+        /* ========================================
+           PHOTO NUMBER
+        ======================================== */
+
+        .photo-number,
+        .video-number {
+
+            position: absolute;
+
+            left: 12px;
+
+            bottom: 12px;
+
+            background:
+                rgba(0, 0, 0, .45);
+
+            color: white;
+
+            padding: 5px 10px;
+
+            border-radius: 50px;
+
+            font:
+                11px Arial, sans-serif;
+
+            backdrop-filter:
+                blur(5px);
+
+        }
+
+
+        /* ========================================
+           VIDEO OVERLAY
+        ======================================== */
+
+        .video-overlay {
+
+            position: absolute;
+
+            inset: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                rgba(20, 8, 15, .18);
+
+            transition: .3s;
+
+        }
+
+
+        .video-card:hover
+        .video-overlay {
+
+            background:
+                rgba(20, 8, 15, .35);
+
+        }
+
+
+        .play-icon {
+
+            width: 58px;
+
+            height: 58px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding-left: 4px;
+
+            background:
+                rgba(255,255,255,.92);
+
+            color: #3b2434;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 20px;
+
+            box-shadow:
+                0 5px 25px
+                rgba(0,0,0,.25);
+
+            transition: .3s;
+
+        }
+
+
+        .video-card:hover
+        .play-icon {
+
+            transform:
+                scale(1.12);
+
+        }
+
+
+        /* ========================================
+           LIGHTBOX
+        ======================================== */
+
+        .lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                rgba(18, 8, 15, .94);
+
+            z-index: 1000;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+        }
+
+
+        .lightbox.active {
+
+            display: flex;
+
+        }
+
+
+        .lightbox img {
+
+            max-width: 90vw;
+
+            max-height: 88vh;
+
+            object-fit: contain;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 0 60px
+                rgba(255,111,174,.2);
+
+        }
+
+
+        .close-lightbox {
+
+            position: absolute;
+
+            top: 25px;
+
+            right: 30px;
+
+            color: white;
+
+            font:
+                35px Arial, sans-serif;
+
+            cursor: pointer;
+
+        }
+
+
+        .lightbox-btn {
+
+            position: absolute;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            border: none;
+
+            background:
+                rgba(255,255,255,.12);
+
+            color: white;
+
+            width: 50px;
+
+            height: 50px;
+
+            border-radius: 50%;
+
+            font-size: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        .lightbox-prev {
+
+            left: 25px;
+
+        }
+
+
+        .lightbox-next {
+
+            right: 25px;
+
+        }
+
+
+        /* ========================================
+           VIDEO LIGHTBOX
+        ======================================== */
+
+        .video-lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                rgba(18, 8, 15, .96);
+
+            z-index: 1100;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 25px;
+
+        }
+
+
+        .video-lightbox.active {
+
+            display: flex;
+
+        }
+
+
+        .video-lightbox video {
+
+            max-width: 92vw;
+
+            max-height: 90vh;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 0 60px
+                rgba(255,111,174,.2);
+
+        }
+
+
+        .close-video {
+
+            position: absolute;
+
+            top: 25px;
+
+            right: 30px;
+
+            color: white;
+
+            font:
+                35px Arial, sans-serif;
+
+            cursor: pointer;
+
+        }
+
+
+        /* ========================================
+           FINAL
+        ======================================== */
+
+        #final {
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 50%,
+                    #4a203c,
+                    transparent 50%
+                ),
+
+                #1b1018;
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+        #final .section-number {
+
+            color: #ff9fc7;
+
+        }
+
+
+        #final h2 {
+
+            font-size:
+                clamp(45px, 9vw, 85px);
+
+            font-weight: normal;
+
+        }
+
+
+        #final h2 em {
+
+            color: #ff8fbd;
+
+        }
+
+
+        .final-message {
+
+            max-width: 650px;
+
+            margin: 30px auto;
+
+            color: #dfccd6;
+
+            font-size: 20px;
+
+            line-height: 2;
+
+        }
+
+
+        .final-btn {
+
+            background: #ff6fae;
+
+            color: white;
+
+            border: none;
+
+            padding: 17px 35px;
+
+            border-radius: 100px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: .3s;
+
+        }
+
+
+        .final-btn:hover {
+
+            transform:
+                scale(1.08);
+
+            box-shadow:
+                0 0 35px
+                rgba(255,111,174,.5);
+
+        }
+
+
+        .final-reveal {
+
+            display: none;
+
+            margin-top: 45px;
+
+            animation:
+                fadeUp 1s ease;
+
+        }
+
+
+        .final-reveal.show {
+
+            display: block;
+
+        }
+
+
+        .final-reveal h3 {
+
+            font-family: Arial, sans-serif;
+
+            font-size:
+                clamp(35px, 8vw, 75px);
+
+            color: #ff8fbd;
+
+        }
+
+
+        .final-reveal p {
+
+            margin-top: 25px;
+
+            font-size: 22px;
+
+            line-height: 1.8;
+
+            color: #ead8e1;
+
+        }
+
+
+        /* ========================================
+           CONFETTI
+        ======================================== */
+
+        .confetti {
+
+            position: fixed;
+
+            top: -20px;
+
+            width: 9px;
+
+            height: 14px;
+
+            z-index: 2000;
+
+            pointer-events: none;
+
+            animation:
+                confettiFall
+                linear
+                forwards;
+
+        }
+
+
+        @keyframes confettiFall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(720deg);
+
+                opacity: 0;
+
+            }
+
+        }
+
+
+        /* ========================================
+           ANIMATIONS
+        ======================================== */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(35px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+
+            }
+
+        }
+
+
+        .reveal {
+
+            opacity: 0;
+
+            transform:
+                translateY(40px);
+
+            transition:
+                1s ease;
+
+        }
+
+
+        .reveal.visible {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+
+        }
+
+
+        /* ========================================
+           MOBILE
+        ======================================== */
+
+        @media (max-width: 700px) {
+
+            .screen,
+            .story-section {
+
+                min-height: 100svh;
+
+            }
+
+
+            .letter {
+
+                padding: 30px 22px;
+
+            }
+
+
+            .letter-content {
+
+                font-size: 18px;
+
+            }
+
+
+            .photo-gallery {
+
+                columns: 2 140px;
+
+                column-gap: 10px;
+
+            }
+
+
+            .photo-card,
+            .video-card {
+
+                margin-bottom: 10px;
+
+                border-radius: 8px;
+
+            }
+
+
+            .lightbox {
+
+                padding: 15px;
+
+            }
+
+
+            .lightbox-btn {
+
+                width: 42px;
+
+                height: 42px;
+
+                font-size: 20px;
+
+            }
+
+
+            .lightbox-prev {
+
+                left: 10px;
+
+            }
+
+
+            .lightbox-next {
+
+                right: 10px;
+
+            }
+
+
+            .heart1 {
+
+                left: 5%;
+
+            }
+
+
+            .heart2 {
+
+                right: 5%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         1. INTRO
+    =========================================== -->
+
+    <section
+        class="screen"
+        id="intro"
+    >
+
+        <div class="floating heart1">
+            ♡
+        </div>
+
+        <div class="floating heart2">
+            ♥
+        </div>
+
+        <div class="floating star1">
+            ✦
+        </div>
+
+        <div class="floating star2">
+            ✧
+        </div>
+
+
+        <div class="intro-content">
+
+            <div class="small-label">
+                A little something for
+            </div>
+
+
+            <h1>
+
+                Chasmish
+
+                <span>
+                    ♡
+                </span>
+
+            </h1>
+
+
+            <p class="intro-text">
+
+                I made something for you.
+
+                It's not much...
+
+                but it's definitely more effort than
+                sending a "happy birthday" text. 😂
+
+            </p>
+
+
+            <button
+                class="main-btn"
+                onclick="goTo('letter')"
+            >
+
+                Open Your Surprise ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         2. LETTER
+    =========================================== -->
+
+    <section
+        class="story-section"
+        id="letter"
+    >
+
+        <div class="letter reveal">
+
+
+            <div class="section-number">
+
+                01 — A SMALL LETTER
+
+            </div>
+
+
+            <h2>
+
+                Dear
+                <em>Chasmish,</em>
+
+            </h2>
+
+
+            <div class="letter-content">
+
+                <p>
+
+                    There are some people who just randomly
+                    become an important part of your life.
+
+                    And then there is you.
+
+                </p>
+
+
+                <div class="special-lines">
+
+                    You're the one who never agreed
+
+                    <br>
+
+                    to anything I ever said,
+
+                    <br>
+
+                    You can't make me function without gaali.
+
+                </div>
+
+
+                <p>
+
+                    Somehow, between all the arguments,
+                    nonsense conversations, stupid jokes,
+                    and all the chaos...
+
+                    you became one of my favourite people.
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    And honestly,
+
+                    I wouldn't want the story any other way. ❤️
+
+                </p>
+
+            </div>
+
+
+            <div style="text-align:center;">
+
+                <button
+                    class="continue-btn"
+                    onclick="goTo('gift')"
+                >
+
+                    There's something else →
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         3. GIFT
+    =========================================== -->
+
+    <section
+        class="story-section"
+        id="gift"
+    >
+
+        <div class="story-container reveal">
+
+
+            <div class="section-number">
+
+                02 — A LITTLE SURPRISE
+
+            </div>
+
+
+            <h2>
+
+                I got you
+                <br>
+                <em>something.</em>
+
+            </h2>
+
+
+            <div
+                class="gift"
+                onclick="openGift()"
+                title="Click me!"
+            >
+
+                🎁
+
+            </div>
+
+
+            <p
+                id="giftText"
+                style="margin-top:20px;"
+            >
+
+                Psst... click the gift 👀
+
+            </p>
+
+
+            <!-- NEW MESSAGE -->
+
+            <p
+                style="
+                    margin-top:35px;
+                    font-size:28px;
+                    color:#ff6fae;
+                    font-style:italic;
+                "
+            >
+
+                Love you, Four Eyes ❤️
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         4. BIRTHDAY
+    =========================================== -->
+
+    <section
+        class="screen"
+        id="birthday"
+    >
+
+        <div class="story-container">
+
+
+            <div class="section-number">
+
+                03 — TODAY IS YOUR DAY
+
+            </div>
+
+
+            <div class="birthday-cake">
+
+                🎂
+
+            </div>
+
+
+            <h1 class="birthday-title">
+
+                HAPPY
+
+                <span>
+                    BIRTHDAY
+                </span>
+
+            </h1>
+
+
+            <p style="margin-top:30px;">
+
+                To the most chaotic,
+                annoying,
+                wonderful person. ❤️
+
+            </p>
+
+
+            <button
+                class="continue-btn"
+                onclick="goTo('memory-intro')"
+            >
+
+                Now let's look at the evidence →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         5. MEMORY INTRO
+    =========================================== -->
+
+    <section
+        class="screen"
+        id="memory-intro"
+    >
+
+        <div class="story-container">
+
+
+            <div class="section-number">
+
+                04 — MEMORY LANE
+
+            </div>
+
+
+            <h2>
+
+                Okay...
+
+                <br>
+
+                <em>here's the evidence.</em>
+
+            </h2>
+
+
+            <p>
+
+                20 photographs.
+
+                <br>
+
+                12 videos.
+
+                <br>
+
+                Countless memories.
+
+                <br>
+
+                And absolutely zero normal behaviour. 💀
+
+            </p>
+
+
+            <button
+                class="continue-btn"
+                onclick="goTo('memories')"
+            >
+
+                Show me →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         6. MEMORIES
+         
+         20 PHOTOS
+         7 LANDSCAPE + 13 PORTRAIT
+
+         12 VIDEOS
+         4 LANDSCAPE + 8 PORTRAIT
+    =========================================== -->
+
+    <section id="memories">
+
+
+        <div class="gallery-heading reveal">
+
+
+            <div class="section-number">
+
+                05 — OUR MEMORIES
+
+            </div>
+
+
+            <h2>
+
+                Us being
+                <em>us.</em>
+
+            </h2>
+
+
+            <p>
+
+                Some moments deserve to be remembered. ❤️
+
+            </p>
+
+        </div>
+
+
+
+        <div class="photo-gallery">
+
+
+            <!-- =================================
+                 7 LANDSCAPE PHOTOS
+            ================================== -->
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape1.jpg"
+                    alt="Memory 1"
+                >
+
+                <span class="photo-number">
+                    PHOTO 01
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape2.jpg"
+                    alt="Memory 2"
+                >
+
+                <span class="photo-number">
+                    PHOTO 02
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape3.jpg"
+                    alt="Memory 3"
+                >
+
+                <span class="photo-number">
+                    PHOTO 03
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape4.jpg"
+                    alt="Memory 4"
+                >
+
+                <span class="photo-number">
+                    PHOTO 04
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape5.jpg"
+                    alt="Memory 5"
+                >
+
+                <span class="photo-number">
+                    PHOTO 05
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape6.jpg"
+                    alt="Memory 6"
+                >
+
+                <span class="photo-number">
+                    PHOTO 06
+                </span>
+
+            </div>
+
+
+            <div class="photo-card landscape">
+
+                <img
+                    src="photos/landscape7.jpg"
+                    alt="Memory 7"
+                >
+
+                <span class="photo-number">
+                    PHOTO 07
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================
+                 13 PORTRAIT PHOTOS
+            ================================== -->
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait1.jpg"
+                    alt="Memory 8"
+                >
+
+                <span class="photo-number">
+                    PHOTO 08
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait2.jpg"
+                    alt="Memory 9"
+                >
+
+                <span class="photo-number">
+                    PHOTO 09
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait3.jpg"
+                    alt="Memory 10"
+                >
+
+                <span class="photo-number">
+                    PHOTO 10
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait4.jpg"
+                    alt="Memory 11"
+                >
+
+                <span class="photo-number">
+                    PHOTO 11
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait5.jpg"
+                    alt="Memory 12"
+                >
+
+                <span class="photo-number">
+                    PHOTO 12
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait6.jpg"
+                    alt="Memory 13"
+                >
+
+                <span class="photo-number">
+                    PHOTO 13
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait7.jpg"
+                    alt="Memory 14"
+                >
+
+                <span class="photo-number">
+                    PHOTO 14
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait8.jpg"
+                    alt="Memory 15"
+                >
+
+                <span class="photo-number">
+                    PHOTO 15
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait9.jpg"
+                    alt="Memory 16"
+                >
+
+                <span class="photo-number">
+                    PHOTO 16
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait10.jpg"
+                    alt="Memory 17"
+                >
+
+                <span class="photo-number">
+                    PHOTO 17
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait11.jpg"
+                    alt="Memory 18"
+                >
+
+                <span class="photo-number">
+                    PHOTO 18
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait12.jpg"
+                    alt="Memory 19"
+                >
+
+                <span class="photo-number">
+                    PHOTO 19
+                </span>
+
+            </div>
+
+
+            <div class="photo-card portrait">
+
+                <img
+                    src="photos/portrait13.jpg"
+                    alt="Memory 20"
+                >
+
+                <span class="photo-number">
+                    PHOTO 20
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================
+                 4 LANDSCAPE VIDEOS
+            ================================== -->
+
+            <div class="video-card landscape-video">
+
+                <video
+                    src="videos/video1.mp4"
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    preload="auto"
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 01
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card landscape-video">
+
+                <video
+                    src="videos/video2.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 02
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card landscape-video">
+
+                <video
+                    src="videos/video3.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 03
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card landscape-video">
+
+                <video
+                    src="videos/video4.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 04
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 8 PORTRAIT VIDEOS
+            ================================== -->
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video5.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 05
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video6.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 06
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video7.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 07
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video8.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 08
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video9.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 09
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video10.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 10
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video11.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 11
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="video-card portrait-video">
+
+                <video
+                    src="videos/video12.mp4"
+                    muted
+                    playsinline
+                    preload="auto"
+                    autoplay
+                    loop
+                ></video>
+
+
+                <div class="video-overlay">
+
+                    <span class="play-icon">
+                        ▶
+                    </span>
+
+                    <span class="video-number">
+                        VIDEO 12
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            style="
+                text-align:center;
+                margin-top:70px;
+            "
+        >
+
+            <button
+                class="main-btn"
+                onclick="goTo('final')"
+            >
+
+                One last thing... ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         7. FINAL
+    =========================================== -->
+
+    <section
+        class="screen"
+        id="final"
+    >
+
+        <div class="story-container">
+
+
+            <div class="section-number">
+
+                06 — ONE LAST THING
+
+            </div>
+
+
+            <h2>
+
+                Make a
+                <em>wish.</em> ✨
+
+            </h2>
+
+
+            <div
+                style="
+                    font-size:100px;
+                    margin:25px;
+                "
+            >
+
+                🎂
+
+            </div>
+
+
+            <p class="final-message">
+
+                I hope this year gives you everything
+                you've been wishing for...
+
+                <br><br>
+
+                And maybe a little less reason
+                to give me gaali. 😂
+
+            </p>
+
+
+            <button
+                class="final-btn"
+                id="wishButton"
+                onclick="makeWish()"
+            >
+
+                BLOW THE CANDLES 🕯️
+
+            </button>
+
+
+            <div
+                class="final-reveal"
+                id="finalReveal"
+            >
+
+                <h3>
+
+                    HAPPY BIRTHDAY
+
+                    <br>
+
+                    CHASMISH ❤️🎉
+
+                </h3>
+
+
+                <p>
+
+                    Stay crazy.
+
+                    <br>
+
+                    Stay annoying.
+
+                    <br>
+
+                    And never change. 🫶
+
+                </p>
+
+
+                <p
+                    style="
+                        margin-top:45px;
+                        font-size:14px;
+                        letter-spacing:3px;
+                        text-transform:uppercase;
+                        color:#aa8c9d;
+                    "
+                >
+
+                    Made with ❤️ for Chasmish
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         PHOTO LIGHTBOX
+    =========================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+    >
+
+        <div
+            class="close-lightbox"
+            onclick="closeLightbox()"
+        >
+            ×
+        </div>
+
+
+        <button
+            class="lightbox-btn lightbox-prev"
+            onclick="previousPhoto()"
+        >
+            ‹
+        </button>
+
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Memory"
+        >
+
+
+        <button
+            class="lightbox-btn lightbox-next"
+            onclick="nextPhoto()"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+
+    <!-- ==========================================
+         VIDEO LIGHTBOX
+    =========================================== -->
+
+    <div
+        class="video-lightbox"
+        id="videoLightbox"
+    >
+
+        <div
+            class="close-video"
+            onclick="closeVideo()"
+        >
+            ×
+        </div>
+
+
+        <video
+            id="lightboxVideo"
+            controls
+            playsinline
+        ></video>
+
+    </div>
+
+
+
+    <script>
+
+
+        /* ========================================
+           NAVIGATION
+        ======================================== */
+
+        function goTo(id) {
+
+            const section =
+                document.getElementById(id);
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+
+        /* ========================================
+           GIFT
+        ======================================== */
+
+        function openGift() {
+
+            const gift =
+                document.querySelector(".gift");
+
+            const text =
+                document.getElementById("giftText");
+
+
+            gift.style.animation = "none";
+
+            gift.innerHTML = "💝";
+
+
+            text.innerHTML =
+                "Okay fine... you found it. 😂❤️";
+
+
+            createConfetti(70);
+
+
+            setTimeout(() => {
+
+                goTo("birthday");
+
+            }, 1300);
+
+        }
+
+
+
+        /* ========================================
+           CONFETTI
+        ======================================== */
+
+        function createConfetti(amount = 100) {
+
+            for (
+                let i = 0;
+                i < amount;
+                i++
+            ) {
+
+                setTimeout(() => {
+
+                    const piece =
+                        document.createElement("div");
+
+
+                    piece.className =
+                        "confetti";
+
+
+                    piece.style.left =
+                        Math.random() * 100 + "vw";
+
+
+                    piece.style.background =
+                        `hsl(
+                            ${Math.random() * 360},
+                            90%,
+                            70%
+                        )`;
+
+
+                    piece.style.animationDuration =
+                        (2 + Math.random() * 3) + "s";
+
+
+                    piece.style.width =
+                        (5 + Math.random() * 8) + "px";
+
+
+                    piece.style.height =
+                        (7 + Math.random() * 12) + "px";
+
+
+                    document.body.appendChild(piece);
+
+
+                    setTimeout(() => {
+
+                        piece.remove();
+
+                    }, 5500);
+
+
+                }, i * 8);
+
+            }
+
+        }
+
+
+
+        /* ========================================
+           FINAL WISH
+        ======================================== */
+
+        function makeWish() {
+
+            const button =
+                document.getElementById(
+                    "wishButton"
+                );
+
+
+            const reveal =
+                document.getElementById(
+                    "finalReveal"
+                );
+
+
+            button.style.display =
+                "none";
+
+
+            createConfetti(200);
+
+
+            setTimeout(() => {
+
+                reveal.classList.add("show");
+
+            }, 600);
+
+
+            setTimeout(() => {
+
+                createConfetti(150);
+
+            }, 1300);
+
+        }
+
+
+
+        /* ========================================
+           PHOTO LIGHTBOX
+        ======================================== */
+
+        const photos = [
+
+            "photos/landscape1.jpg",
+            "photos/landscape2.jpg",
+            "photos/landscape3.jpg",
+            "photos/landscape4.jpg",
+            "photos/landscape5.jpg",
+            "photos/landscape6.jpg",
+            "photos/landscape7.jpg",
+
+            "photos/portrait1.jpg",
+            "photos/portrait2.jpg",
+            "photos/portrait3.jpg",
+            "photos/portrait4.jpg",
+            "photos/portrait5.jpg",
+            "photos/portrait6.jpg",
+            "photos/portrait7.jpg",
+            "photos/portrait8.jpg",
+            "photos/portrait9.jpg",
+            "photos/portrait10.jpg",
+            "photos/portrait11.jpg",
+            "photos/portrait12.jpg",
+            "photos/portrait13.jpg"
+
+        ];
+
+
+        let currentPhoto = 0;
+
+
+        const lightbox =
+            document.getElementById(
+                "lightbox"
+            );
+
+
+        const lightboxImage =
+            document.getElementById(
+                "lightboxImage"
+            );
+
+
+        document
+            .querySelectorAll(".photo-card")
+            .forEach((photo, index) => {
+
+                photo.addEventListener(
+                    "click",
+                    () => {
+
+                        currentPhoto =
+                            index;
+
+                        showPhoto();
+
+                    }
+                );
+
+            });
+
+
+        function showPhoto() {
+
+            lightboxImage.src =
+                photos[currentPhoto];
+
+            lightbox.classList.add(
+                "active"
+            );
+
+        }
+
+
+        function closeLightbox() {
+
+            lightbox.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        function nextPhoto() {
+
+            currentPhoto++;
+
+
+            if (
+                currentPhoto >=
+                photos.length
+            ) {
+
+                currentPhoto = 0;
+
+            }
+
+
+            showPhoto();
+
+        }
+
+
+        function previousPhoto() {
+
+            currentPhoto--;
+
+
+            if (currentPhoto < 0) {
+
+                currentPhoto =
+                    photos.length - 1;
+
+            }
+
+
+            showPhoto();
+
+        }
+
+
+
+        /* ========================================
+           VIDEO LIGHTBOX
+        ======================================== */
+
+        const videoLightbox =
+            document.getElementById(
+                "videoLightbox"
+            );
+
+
+        const lightboxVideo =
+            document.getElementById(
+                "lightboxVideo"
+            );
+
+
+        document
+            .querySelectorAll(".video-card")
+            .forEach(card => {
+
+                card.addEventListener(
+                    "click",
+                    () => {
+
+                        const video =
+                            card.querySelector(
+                                "video"
+                            );
+
+
+                        lightboxVideo.src =
+                            video.currentSrc ||
+                            video.src;
+
+
+                        videoLightbox.classList
+                            .add("active");
+
+
+                        lightboxVideo.play();
+
+                    }
+                );
+
+            });
+
+
+        function closeVideo() {
+
+            lightboxVideo.pause();
+
+            lightboxVideo.removeAttribute(
+                "src"
+            );
+
+            lightboxVideo.load();
+
+            videoLightbox.classList.remove(
+                "active"
+            );
+
+        }
+
+
+
+        /* ========================================
+           CLOSE LIGHTBOX
+        ======================================== */
+
+        lightbox.addEventListener(
+            "click",
+            (event) => {
+
+                if (
+                    event.target === lightbox
+                ) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+
+        videoLightbox.addEventListener(
+            "click",
+            (event) => {
+
+                if (
+                    event.target ===
+                    videoLightbox
+                ) {
+
+                    closeVideo();
+
+                }
+
+            }
+        );
+
+
+
+        /* ========================================
+           KEYBOARD CONTROLS
+        ======================================== */
+
+        document.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (
+                    lightbox.classList
+                        .contains("active")
+                ) {
+
+                    if (
+                        event.key ===
+                        "Escape"
+                    ) {
+
+                        closeLightbox();
+
+                    }
+
+
+                    if (
+                        event.key ===
+                        "ArrowRight"
+                    ) {
+
+                        nextPhoto();
+
+                    }
+
+
+                    if (
+                        event.key ===
+                        "ArrowLeft"
+                    ) {
+
+                        previousPhoto();
+
+                    }
+
+                }
+
+
+                if (
+                    videoLightbox.classList
+                        .contains("active")
+                ) {
+
+                    if (
+                        event.key ===
+                        "Escape"
+                    ) {
+
+                        closeVideo();
+
+                    }
+
+                }
+
+            }
+        );
+
+
+
+        /* ========================================
+           SCROLL REVEAL
+        ======================================== */
+
+        const revealElements =
+            document.querySelectorAll(
+                ".reveal"
+            );
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(
+                        entry => {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target
+                                    .classList
+                                    .add("visible");
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        revealElements.forEach(
+            element => {
+
+                observer.observe(element);
+
+            }
+        );
+
+
+
+        /* ========================================
+           FLOATING HEARTS
+        ======================================== */
+
+        function floatingHeart() {
+
+            const heart =
+                document.createElement(
+                    "div"
+                );
+
+
+            heart.innerHTML =
+                Math.random() > .5
+                    ? "♡"
+                    : "♥";
+
+
+            heart.style.position =
+                "fixed";
+
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+
+            heart.style.bottom =
+                "-30px";
+
+
+            heart.style.fontSize =
+                (12 + Math.random() * 20)
+                + "px";
+
+
+            heart.style.color =
+                "#ff8fbd";
+
+
+            heart.style.opacity =
+                ".35";
+
+
+            heart.style.pointerEvents =
+                "none";
+
+
+            heart.style.zIndex =
+                "1";
+
+
+            heart.style.transition =
+                "transform 7s linear, opacity 7s linear";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            setTimeout(() => {
+
+                heart.style.transform =
+                    `translateY(-110vh)
+                     rotate(
+                        ${Math.random() * 90}deg
+                     )`;
+
+
+                heart.style.opacity =
+                    "0";
+
+
+            }, 100);
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 7500);
+
+        }
+
+
+        setInterval(
+            floatingHeart,
+            1200
+        );
+
+
+    </script>
+
+</body>
+
+</html>
+```

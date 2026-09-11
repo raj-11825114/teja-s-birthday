@@ -1375,11 +1375,234 @@
         }
 
 
+
+        /* ========================================
+           PROS & CONS
+        ======================================== */
+
+        #pros-cons {
+            background:
+                radial-gradient(circle at 15% 20%, #ffe0ed, transparent 35%),
+                radial-gradient(circle at 85% 80%, #e8ddff, transparent 35%),
+                #fff9fc;
+        }
+
+        .pros-cons-wrap {
+            width: min(1050px, 100%);
+            text-align: center;
+        }
+
+        .pros-cons-intro {
+            max-width: 680px;
+            margin: 0 auto 45px;
+        }
+
+        .pros-cons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 35px;
+            text-align: left;
+        }
+
+        .pc-card {
+            padding: 32px;
+            border-radius: 20px;
+            box-shadow: 0 15px 45px rgba(55, 25, 43, .10);
+        }
+
+        .pc-card.pros {
+            background: #fff0f7;
+            border: 1px solid #ffd2e5;
+        }
+
+        .pc-card.cons {
+            background: #f5efff;
+            border: 1px solid #ded0ff;
+        }
+
+        .pc-card h3 {
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+
+        .pc-card.pros h3 {
+            color: #e75491;
+        }
+
+        .pc-card.cons h3 {
+            color: #7c5bd6;
+        }
+
+        .pc-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pc-list > li {
+            margin: 14px 0;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #5c4553;
+        }
+
+        .pc-list > li::before {
+            content: "♡";
+            color: var(--pink);
+            font-weight: bold;
+            margin-right: 9px;
+        }
+
+        .pc-list.cons-list > li::before {
+            content: "×";
+            color: #8c6ce2;
+        }
+
+        .pc-list ul {
+            margin: 8px 0 0 30px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pc-list ul li {
+            margin: 6px 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #725b67;
+        }
+
+        .pc-list ul li::before {
+            content: "~";
+            color: var(--pink);
+            margin-right: 8px;
+        }
+
+        .final-verdict {
+            margin: 45px auto 0;
+            padding: 25px;
+            max-width: 700px;
+            border-radius: 18px;
+            background: #3b2434;
+            color: white;
+            box-shadow: 0 15px 40px rgba(59, 36, 52, .18);
+        }
+
+        .final-verdict strong {
+            color: #ff9fc7;
+        }
+
         /* ========================================
            MOBILE
         ======================================== */
 
+
+        /* ========================================
+           CUTE LETTER
+        ======================================== */
+
+        #cute-letter {
+            background:
+                linear-gradient(rgba(255,255,255,.82), rgba(255,255,255,.82)),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 31px,
+                    #f1dfe7 32px
+                );
+        }
+
+        .cute-letter-card {
+            width: min(800px, 100%);
+            background: rgba(255, 250, 252, .96);
+            padding: 55px;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 25px 80px rgba(82, 43, 65, .12);
+            border: 1px solid #f0dce5;
+            position: relative;
+        }
+
+        .cute-letter-card::before {
+            content: "♡";
+            position: absolute;
+            top: 18px;
+            right: 25px;
+            font-size: 28px;
+            color: #ff9fc7;
+        }
+
+        .cute-letter-card h2 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .cute-letter-content {
+            font-size: 20px;
+            line-height: 1.9;
+            color: #684d5c;
+        }
+
+        .cute-letter-content p {
+            max-width: none;
+            margin: 0 0 27px;
+            font-size: 20px;
+            line-height: 1.9;
+            color: #684d5c;
+        }
+
+        .cute-letter-highlight {
+            margin: 30px 0;
+            padding: 24px 25px;
+            border-left: 3px solid var(--pink);
+            background: #fff1f7;
+            border-radius: 0 12px 12px 0;
+            color: #432c3b;
+            font-size: 22px;
+            line-height: 1.8;
+        }
+
+        .cute-letter-signoff {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 24px;
+            color: #ff6fae;
+            font-style: italic;
+        }
+
         @media (max-width: 700px) {
+
+            .cute-letter-card {
+                padding: 35px 22px;
+            }
+
+            .cute-letter-content,
+            .cute-letter-content p {
+                font-size: 18px;
+            }
+
+            .cute-letter-highlight {
+                font-size: 19px;
+                padding: 20px;
+            }
+
+
+            .pros-cons-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .pc-card {
+                padding: 24px 20px;
+            }
+
+            .pc-list > li {
+                font-size: 17px;
+            }
+        }
+
+
 
             .screen,
             .story-section {
@@ -2533,9 +2756,184 @@
 
 
 
+
     <!-- ==========================================
-         7. FINAL
+         7. PROS & CONS
     =========================================== -->
+
+    <section
+        class="story-section"
+        id="pros-cons"
+    >
+
+        <div class="pros-cons-wrap reveal">
+
+            <div class="section-number">
+                06 — THE PROS & CONS
+            </div>
+
+            <h2>
+                Being <em>Chasmish.</em> 😂
+            </h2>
+
+            <p class="pros-cons-intro">
+                Every great person comes with a few advantages...
+                and a few problems. So, here's the completely
+                unbiased list. 😌
+            </p>
+
+            <div class="pros-cons-grid">
+
+                <div class="pc-card pros">
+
+                    <h3>💗 PROS</h3>
+
+                    <ol class="pc-list">
+
+                        <li>ME BEING YOUR FRIEND</li>
+
+                        <li>You're so cool 😎</li>
+
+                        <li>Ofc, I LOVE YOU 💗</li>
+
+                        <li>You're so supportive 🫂</li>
+
+                        <li>You're always there for me</li>
+
+                        <li>You get me gifts 🫶</li>
+
+                        <li>You really care for me 💝</li>
+
+                        <li>You're so irresistibly HOT 🥵</li>
+
+                        <li>You're sooooo gorgeous 🫠</li>
+
+                    </ol>
+
+                </div>
+
+
+                <div class="pc-card cons">
+
+                    <h3>😂 CONS</h3>
+
+                    <ol class="pc-list cons-list">
+
+                        <li>
+                            Overthinks likewise:
+                            <ul>
+                                <li>You think you are not beautiful enough</li>
+                                <li>You think you are not enough</li>
+                                <li>You think you'll not make it</li>
+                            </ul>
+                        </li>
+
+                        <li>Sucks at choosing a boy (Chomu tha)</li>
+
+                        <li>You care too much about what people will say</li>
+
+                        <li>Choti si baat leke baith jaati hai</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+
+            <div class="final-verdict">
+
+                <strong>Final verdict:</strong>
+                <br><br>
+                Unfortunately, the pros win. You're stuck with me. ❤️
+
+            </div>
+
+
+            <div style="text-align:center;">
+
+                <button
+                    class="continue-btn"
+                    onclick="goTo('cute-letter')"
+                >
+                    Okay, one more thing... 💌
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         8. CUTE LETTER PLACEHOLDER
+    =========================================== -->
+
+    <!-- ==========================================
+         8. CUTE LETTER
+    =========================================== -->
+
+    <section
+        class="story-section"
+        id="cute-letter"
+    >
+
+        <div class="cute-letter-card reveal">
+
+            <div class="section-number">
+                07 — A LITTLE LETTER
+            </div>
+
+            <h2>
+                One more thing,
+                <br>
+                <em>Chasmish. 💌</em>
+            </h2>
+
+            <div class="cute-letter-content">
+
+                <p>
+                    Out of every cons everything I listed ! 
+                    <br>
+                    Remember ALWAYS ! YOU ARE BEAUTIFUL ENOUGH TO BE LOVED BY ANYONE! 
+                </p>
+
+                <p>
+                    You are gem to me I really mean everything I said! You are enough for everything you ever thought or desire .
+                </p>
+
+                <div class="cute-letter-highlight">
+                    If you ever need me in your life I'll always be there to hear you out! Even if you'll be wrong, even if you commit crime , even if you kick someone on there face I'LL ALWAYS GOT YOUR BACK BABY! 
+                </div>
+
+                <p>
+                    DESPITE HAVING YOUR BIRTHDAY IN SUCH A COMMON MONTH ( STD TYPES)
+                    <br>
+                    You are special to me😭😂 
+                </p>
+
+                <div class="cute-letter-signoff">
+                    LYSM🫶🧿🩷 I WISHHH YOU EVERYTHING A LOT MORE LOVE THAT YOU EVER THOUGHT OF🧿
+                </div>
+
+            </div>
+
+            <div style="text-align:center;">
+
+                <button
+                    class="continue-btn"
+                    onclick="goTo('final')"
+                >
+                    Save this forever... ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <section
         class="screen"
@@ -2547,7 +2945,7 @@
 
             <div class="section-number">
 
-                06 — ONE LAST THING
+                09 — ONE LAST THING
 
             </div>
 
@@ -3317,4 +3715,3 @@
 </body>
 
 </html>
-```
